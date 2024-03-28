@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+input[type=text]{
+  width: 100%;
+}
