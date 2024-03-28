@@ -1,0 +1,8 @@
+input[type=text] {
+    width: 100%;
+}
+
+.searchForm{
+    display: grid;
+    row-gap: 0.5rem;
+}

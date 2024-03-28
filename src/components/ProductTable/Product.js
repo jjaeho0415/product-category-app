@@ -1,12 +1,19 @@
 import React from "react";
-import ProductCategoryRow from "./Row/ProductCategoryRow";
-import ProductRow from "./Row/ProductRow";
+import ProductCategoryRow from "./Rows/ProductCategoryRow";
+import ProductRow from "./Rows/ProductRow";
+import "./Product.css";
 
-const ProductTable = ({ products }) => {
+const ProductTable = ({ products, filterText, inStockOnly }) => {
   const rows = [];
   let lastCategory = null;
 
   products.forEach((product) => {
+    if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
+      return;
+    }
+    if (inStockOnly && !product.stocked) {
+      return;
+    }
     if (product.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow

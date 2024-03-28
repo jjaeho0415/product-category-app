@@ -9,7 +9,7 @@ const ProductRow = ({ product }) => {
   return (
     <tr>
       <td>{name}</td>
-      <td>product.price</td>
+      <td>{product.price}</td>
     </tr>
   );
 };
