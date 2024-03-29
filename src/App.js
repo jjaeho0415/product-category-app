@@ -1,8 +1,13 @@
 import Products from "./api/products";
-import FilterableProductTable from "./page/FilterableProductTable/FilterableProductTable";
+import "./App.css";
+import FilterableProductTable from "./pages/FilterableProductTable";
 
 function App() {
-  return <FilterableProductTable products={Products} />;
+  return (
+    <div className='mainContainer'>
+      <FilterableProductTable products={Products} />;
+    </div>
+  );
 }
 
 export default App;

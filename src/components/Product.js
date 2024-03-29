@@ -1,7 +1,7 @@
 import React from "react";
-import ProductCategoryRow from "./Rows/ProductCategoryRow";
-import ProductRow from "./Rows/ProductRow";
 import "./Product.css";
+import ProductCategoryRow from "./ProductCategoryRow";
+import ProductRow from "./ProductRow";
 
 const ProductTable = ({ products, filterText, inStockOnly }) => {
   const rows = [];
